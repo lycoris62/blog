@@ -1,6 +1,5 @@
 package com.kjyw99.blog;
 
-import com.kjyw99.blog.controller.GuestbookController;
 import com.kjyw99.blog.repository.GuestbookRepository;
 import com.kjyw99.blog.repository.GuestbookRepositoryImpl;
 import com.kjyw99.blog.service.GuestbookService;

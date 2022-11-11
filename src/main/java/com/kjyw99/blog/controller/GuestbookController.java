@@ -2,7 +2,7 @@ package com.kjyw99.blog.controller;
 
 import com.kjyw99.blog.dto.GuestbookDTO;
 import com.kjyw99.blog.service.GuestbookService;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -16,7 +16,7 @@ public class GuestbookController {
         this.guestbookService = guestbookService;
     }
 
-    @PostMapping("/api/v1/guestbook")
+    @GetMapping("/api/v1/guestbook")
     public List<GuestbookDTO> getGuestbook() {
         return guestbookService.findAll();
     }
